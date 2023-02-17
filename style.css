@@ -1,0 +1,139 @@
+:root {
+  --background: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Manrope', sans-serif;
+}
+
+.navigation {
+  background-color: var(--background);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner {
+  padding: 3%;
+}
+
+.botao-menu {
+  background-color: var(--background);
+  cursor: pointer;
+  padding: 3%;
+}
+
+
+.abrir {
+  display: none;
+}
+
+.conteudo {
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  padding: 18%;
+}
+
+.texto-descricao {
+  color: white;
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.lista {
+  color: white;
+  display: none;
+}
+
+.lista-links {
+  list-style: none;
+}
+
+.links {
+  padding-top: 3%;
+}
+
+.lista-aberta {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  height: calc(100vh - 250px);
+  width: calc(100vw - 6rem);
+  
+}
+
+.botao-pedido {
+  align-items: center;
+  padding-top: 25%;
+  font-weight: 700;
+}
+
+.botao-cafe {
+  color: white;
+  background-color: var(--background);
+  padding: 10px;
+  width: 150px;
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  border: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  border-color: var(--button);
+}
+
+.letreiro {
+  color: white;
+  padding-top: 45%;
+}
+
+.texto-coffee {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 3%;
+}
+
+.texto-code {
+  text-align: center;
+  color: var(--background);
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+  font-size: 30px;
+}
+
+footer {
+  align-items: center;
+}
+
+.footer-sumir {
+  display: none;
+}
+
+.blur-mobile {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.coffee-image {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
