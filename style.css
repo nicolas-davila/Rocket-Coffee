@@ -51,6 +51,8 @@ body {
 
 .texto-descricao {
   color: white;
+  text-align: center;
+  padding: 18%;
   margin-top: 40px;
   font-size: 22px;
   font-weight: 400;
@@ -59,6 +61,8 @@ body {
 .lista {
   color: white;
   display: none;
+  text-align: left;
+  padding-top: 10%;
 }
 
 .lista-links {
@@ -66,7 +70,20 @@ body {
 }
 
 .links {
-  padding-top: 3%;
+  color: gray;
+  font-size: 18px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  font-family: 'Manrope', sans-serif;
+}
+
+.links:hover {
+  color: white;
+  cursor: pointer;
+  border-left: solid;
+  border-left-width: 10;  
+  border-left-color: var(--button);
 }
 
 .lista-aberta {
@@ -75,13 +92,11 @@ body {
   flex-direction: column;
   background: var(--background);
   height: calc(100vh - 250px);
-  width: calc(100vw - 6rem);
-  
+  width: 100vw;
 }
 
 .botao-pedido {
   align-items: center;
-  padding-top: 25%;
   font-weight: 700;
 }
 
@@ -100,12 +115,16 @@ body {
 
 .letreiro {
   color: white;
-  padding-top: 45%;
+  padding-top: 50%;
+}
+
+.sumir-texto {
+  display: none;
 }
 
 .texto-coffee {
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
   padding-bottom: 3%;
 }
 
@@ -113,7 +132,7 @@ body {
   text-align: center;
   color: var(--background);
   text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
-  font-size: 30px;
+  font-size: 26px;
 }
 
 footer {
@@ -136,4 +155,8 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
+}
+
+@media (min-width: 1000px) {
+  
 }
