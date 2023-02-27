@@ -16,25 +16,31 @@
 
 body {
   background-color: var(--background);
-  font-family: 'Manrope', sans-serif;
 }
 
 .navigation {
   background-color: var(--background);
   position: relative;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
 }
 
 .banner {
   padding: 3%;
 }
 
+.banner-desk {
+  display: none;
+}
+
 .botao-menu {
+  position: absolute;
+  padding: 5%;
+  top: 0;
+  right: 0;
   background-color: var(--background);
   cursor: pointer;
-  padding: 3%;
 }
 
 
@@ -46,15 +52,21 @@ body {
   align-items: center;
   text-align: center;
   font-weight: 700;
-  padding: 18%;
+}
+
+.blur2-top {
+  display: none;
 }
 
 .texto-descricao {
   color: white;
   text-align: center;
-  padding: 18%;
-  margin-top: 40px;
-  font-size: 22px;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 15%;
+  font-size: 28px;
+
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
 }
 
@@ -67,6 +79,10 @@ body {
 
 .lista-links {
   list-style: none;
+}
+
+.links-desk {
+  display: none;
 }
 
 .links {
@@ -98,24 +114,33 @@ body {
 .botao-pedido {
   align-items: center;
   font-weight: 700;
+  padding-top: 22%;
 }
 
 .botao-cafe {
   color: white;
-  background-color: var(--background);
+  background-color: transparent;
   padding: 10px;
   width: 150px;
-  font-size: 15px;
+  font-size: 12px;
   font-family: 'Manrope', sans-serif;
+  font-weight: 700;
   border: solid;
   border-width: 2px;
   border-radius: 8px;
   border-color: var(--button);
 }
 
+.botao-cafe:hover {
+  cursor: pointer;
+}
+
 .letreiro {
   color: white;
-  padding-top: 50%;
+  padding-top: 30%;
+
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
 }
 
 .sumir-texto {
@@ -124,7 +149,7 @@ body {
 
 .texto-coffee {
   text-align: center;
-  font-size: 26px;
+  font-size: 40px;
   padding-bottom: 3%;
 }
 
@@ -132,7 +157,7 @@ body {
   text-align: center;
   color: var(--background);
   text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
-  font-size: 26px;
+  font-size: 40px;
 }
 
 footer {
@@ -150,6 +175,10 @@ footer {
   left: 0;
 }
 
+.blur1 {
+  display: none;
+}
+
 .coffee-image {
   position: absolute;
   width: 100%;
@@ -157,6 +186,107 @@ footer {
   left: 0;
 }
 
+.coffee-sumir {
+  display: none;
+}
+
 @media (min-width: 1000px) {
-  
+  .navigation {
+    background-color: var(--background);
+  }
+  .banner {
+    display: none;
+  }  
+  .banner-desk {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 120px;
+    padding-top: 3%;
+    padding-left: 12%;
+  }
+  .botao-menu {
+    display: none;
+  }
+  .botao-pedido {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    padding-top: 3%;
+    padding-right: 12%;
+  }
+  .blur2-top {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .links-desk {
+    display: flex;
+    justify-content: center;
+    color: #d9d9d9;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+  }
+  .lista-links {
+    padding-top: 3%;
+    padding-right: 3%;
+  }
+  .link:hover {
+    cursor: pointer;
+    border-bottom: solid;
+    border-bottom-width: 10;  
+    border-bottom-color: var(--button);
+  }
+  .texto-descricao {
+    display: none;
+  }
+  .letreiro-desk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8%;
+
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+  }
+  .texto-coffee-desk {
+    color: white;
+    font-size: 10vh;
+  }
+  .texto-code-desk {
+    color: var(--background);
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    font-size: 10vh;
+  }
+  .lista {
+    display: none;
+  }
+  .blur-mobile {
+    display: none;
+  }
+  .letreiro {
+    display: none;
+  }
+  .blur1 {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0;
+  }
+  .coffee-image {
+    position: absolute;
+    width: 50vw;
+    left: 25%;
+    bottom: 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-img {
+    align-items: center;
+  }
 }
